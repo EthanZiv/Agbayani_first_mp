@@ -9,7 +9,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('books', function (Illuminate\Database\Schema\Blueprint $table) {
-            $table->string('info_link')->nullable(); // ✅ Adds the missing column
+            $table->string('info_link')->nullable();
         });
     }
 
