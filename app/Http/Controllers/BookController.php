@@ -51,6 +51,6 @@ class BookController extends Controller
 
     public function index() {
         $savedBooks = Book::all();
-        return view('project.home', compact('books'));
+        return view('project.home', compact('savedBooks'));
     }
 }
